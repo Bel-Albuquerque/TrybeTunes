@@ -126,7 +126,7 @@ Outra diferença importante neste projeto em relação aos anteriores é que voc
 
   - Serão `2` dias de projeto.
   
-  - Data de entrega para avaliação final do projeto: `22/09/2021 - 14:00h`.
+  - Data de entrega para avaliação final do projeto: `24/09/2021 - 14:00h`.
 
 ---
 
