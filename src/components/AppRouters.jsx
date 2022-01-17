@@ -7,7 +7,8 @@ import Search from '../pages/Search';
 import Favorites from '../pages/Favorites';
 import Login from '../pages/Login';
 import NotFound from '../pages/NotFound';
-import LoginProvider from '../Contexts/LoginProvider';
+import LoginProvider from '../Contexts/LoginContext/LoginProvider';
+import SearchProvider from '../Contexts/SearchContext/SearchProvider';
 
 function AppRouters() {
   return (
@@ -16,7 +17,13 @@ function AppRouters() {
         <Route path="/album/:id" component={ Album } />
         <Route path="/profile/edit" component={ ProfileEdit } />
         <Route path="/profile" component={ Profile } />
-        <Route path="/search" component={ Search } />
+
+        <Route path="/search">
+          <SearchProvider>
+            <Search />
+          </SearchProvider>
+        </Route>
+
         <Route path="/favorites" component={ Favorites } />
 
         <Route exact path="/">
