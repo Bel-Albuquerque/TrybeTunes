@@ -8,24 +8,22 @@ import Favorites from '../pages/Favorites';
 import Login from '../pages/Login';
 import NotFound from '../pages/NotFound';
 
-class AppRouters extends React.Component {
-  render() {
-    return (
-      <main>
-        <BrowserRouter>
-          <Switch>
-            <Route path="/album/:id" component={ Album } />
-            <Route path="/profile/edit" component={ ProfileEdit } />
-            <Route path="/profile" component={ Profile } />
-            <Route path="/search" component={ Search } />
-            <Route path="/favorites" component={ Favorites } />
-            <Route exact path="/" component={ Login } />
-            <Route path="*" component={ NotFound } />
-          </Switch>
-        </BrowserRouter>
-      </main>
-    );
-  }
+function AppRouters() {
+  return (
+    <main>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/album/:id" component={ Album } />
+          <Route path="/profile/edit" component={ ProfileEdit } />
+          <Route path="/profile" component={ Profile } />
+          <Route path="/search" component={ Search } />
+          <Route path="/favorites" component={ Favorites } />
+          <Route exact path="/" component={ Login } />
+          <Route path="*" component={ NotFound } />
+        </Switch>
+      </BrowserRouter>
+    </main>
+  );
 }
 
 export default AppRouters;
