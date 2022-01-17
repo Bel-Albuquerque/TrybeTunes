@@ -1,11 +1,13 @@
 import React from 'react';
+import HeaderNav from './HeaderNav';
 import User from './User';
 
 function Header() {
   return (
-    <main data-testid="header-component">
+    <header data-testid="header-component">
       <User />
-    </main>
+      <HeaderNav />
+    </header>
   );
 }
 
