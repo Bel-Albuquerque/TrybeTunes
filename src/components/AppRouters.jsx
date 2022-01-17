@@ -18,11 +18,13 @@ function AppRouters() {
         <Route path="/profile" component={ Profile } />
         <Route path="/search" component={ Search } />
         <Route path="/favorites" component={ Favorites } />
+
         <Route exact path="/">
           <LoginProvider>
             <Login />
           </LoginProvider>
         </Route>
+
         <Route path="*" component={ NotFound } />
       </Switch>
     </BrowserRouter>
