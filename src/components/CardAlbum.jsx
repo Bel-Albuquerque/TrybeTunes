@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function InputSearch() {
+function CardAlbum(props) {
+  const { collectionId, artworkUrl100, collectionName, artistName } = props;
   return (
     <section>
       <Link
-        key={ collectionId }
         data-testid={ `link-to-album-${collectionId}` }
         to={ `/album/${collectionId}` }
       >
@@ -19,4 +19,4 @@ function InputSearch() {
   );
 }
 
-export default InputSearch;
+export default CardAlbum;
