@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import LoginContext from '../Contexts/LoginContext';
+import LoginContext from '../Contexts/LoginContext/LoginContext';
 
 function InputName() {
   const {

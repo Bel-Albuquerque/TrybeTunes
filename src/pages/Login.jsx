@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Button from '../components/Button';
 import InputName from '../components/InputName';
-import LoginContext from '../Contexts/LoginContext';
+import LoginContext from '../Contexts/LoginContext/LoginContext';
 import { createUser } from '../services/userAPI';
 
 function Login() {
@@ -25,6 +25,7 @@ function Login() {
             text="Entrar"
             disabled={ disabled }
             handleClick={ handleClick }
+            dataTestId="login-submit-button"
           />
         </>
       )}
