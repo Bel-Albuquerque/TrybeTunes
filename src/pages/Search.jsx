@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { useState } from 'react/cjs/react.development';
 import Button from '../components/Button';
 import Header from '../components/Header';
