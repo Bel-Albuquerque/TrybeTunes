@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import CheckFavorite from './CheckFavorite';
 
 function CardMusic(props) {
   const { trackId, trackName, previewUrl } = props;
@@ -12,6 +13,7 @@ function CardMusic(props) {
         <code>audio</code>
         .
       </audio>
+      <CheckFavorite songId={ trackId } />
     </li>
   );
 }
