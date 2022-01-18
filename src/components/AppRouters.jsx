@@ -9,12 +9,19 @@ import Login from '../pages/Login';
 import NotFound from '../pages/NotFound';
 import LoginProvider from '../Contexts/LoginContext/LoginProvider';
 import SearchProvider from '../Contexts/SearchContext/SearchProvider';
+import AlbumProvider from '../Contexts/AlbumContext/AlbumProvider';
 
 function AppRouters() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/album/:id" component={ Album } />
+
+        <Route path="/album/:id">
+          <AlbumProvider>
+            <Album />
+          </AlbumProvider>
+        </Route>
+
         <Route path="/profile/edit" component={ ProfileEdit } />
         <Route path="/profile" component={ Profile } />
 
