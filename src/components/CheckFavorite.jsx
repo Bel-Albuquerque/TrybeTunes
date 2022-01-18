@@ -1,27 +1,16 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react/cjs/react.development';
+import { useState } from 'react/cjs/react.development';
 import AlbumContext from '../Contexts/AlbumContext/AlbumContext';
 import { addSong, removeSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
+import useCheckFavoritesSongs from '../hoocks/useCheckFavoritesSongs';
 
 function CheckFavorite({ songId }) {
   const { data } = useContext(AlbumContext);
   const [check, setCheck] = useState(false);
   const [loading, setLoading] = useState([]);
 
-  const isChecked = async () => {
-    const favorites = await getFavoriteSongs();
-    const bool = favorites.some(({ trackId }) => trackId === songId);
-    return bool;
-  };
-
-  useEffect(() => {
-    (async () => {
-      const bool = await isChecked();
-      setCheck(bool);
-      setLoading(false);
-    })();
-  }, []);
+  useCheckFavoritesSongs(setCheck, setLoading, songId);
 
   const handleCheckTrue = async (id) => {
     setCheck(!check);
