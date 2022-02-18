@@ -6,9 +6,9 @@ import { addSong, removeSong, getFavoriteSongs } from '../services/favoriteSongs
 import useCheckFavoritesSongs from '../hoocks/useCheckFavoritesSongs';
 
 function CheckFavorite({ songId }) {
-  const { data } = useContext(AlbumContext);
+  const { data, favoriteList, setFavoriteList } = useContext(AlbumContext);
   const [check, setCheck] = useState(false);
-  const [loading, setLoading] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useCheckFavoritesSongs(setCheck, setLoading, songId);
 
@@ -24,7 +24,8 @@ function CheckFavorite({ songId }) {
     const favorites = await getFavoriteSongs();
     const song = favorites.find(({ trackId }) => trackId === id);
     await removeSong(song);
-    setLoading(false);
+    await setFavoriteList(!favoriteList);
+    await setLoading(false);
   };
 
   const handleChecked = async ({ checked }, id) => {
