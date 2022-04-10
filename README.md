@@ -1,7 +1,7 @@
 # TrybeTunes
 
 
-<img src="requisito6_1.gif" alt="front-image">
+<img src="./images/requisito6_1.gif" alt="front-image">
 
 > 
 O projeto simula uma aplicação responsável pela série A do fictício TFC - Trybe Futebol Clube.
