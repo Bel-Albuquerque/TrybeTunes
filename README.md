@@ -1,17 +1,31 @@
 # TrybeTunes
 
 
-<img src="./images/requisito6_1.gif" alt="front-image">
+<img src="./images/requisito6_1.gif" alt="imagem da tela de busca por artista">
+<img src="./images/requisito9.gif" alt="imagem da tela de musicas">
 
 > 
-O projeto simula uma aplicação responsável pela série A do fictício TFC - Trybe Futebol Clube.
-Nesse projeto eu desenvolvi todo o backend e o Banco de Dados, de uma aplicação com o frontend já pronto, modelei os dados com MySQL através do Sequelize, fiz testes de integração utilizando chai/sinon e "dockerizei" a aplicação e "orquestrei" os conteines.
+Neste projeto eu criei o TrybeTunes, uma aplicação capaz de reproduzir músicas, criar lista de músicas favoritas e editar o perfil da pessoa usuária.
+Tudo isso usando uma API do ITunes
+
+### O que esperar da aplicação:
+Tela de login;
+Pesquisar por uma banda ou artista;
+Listar os álbuns disponíveis dessa banda ou artista;
+Visualizar as músicas de um álbum selecionado;
+Reproduzir uma prévia das músicas deste álbum;
+Favoritar e desfavoritar músicas;
+Ver a lista de músicas favoritas;
+Ver o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
+Editar o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
 
 
 ### Ajustes e melhorias
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
+- [ ] Terminar a rota de perfil
+- [ ] Terminar a rota de edição de perfil
 - [ ] Melhorar a estrutura da aplicação
 - [ ] produzir testes de integração
 - [ ] Produzir testes unitários.
