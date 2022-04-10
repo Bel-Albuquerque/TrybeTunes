@@ -9,15 +9,16 @@ Neste projeto eu criei o TrybeTunes, uma aplicação capaz de reproduzir música
 Tudo isso usando uma API do ITunes
 
 ### O que esperar da aplicação:
-Tela de login;
-Pesquisar por uma banda ou artista;
-Listar os álbuns disponíveis dessa banda ou artista;
-Visualizar as músicas de um álbum selecionado;
-Reproduzir uma prévia das músicas deste álbum;
-Favoritar e desfavoritar músicas;
-Ver a lista de músicas favoritas;
-Ver o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
-Editar o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
+
+- Tela de login;
+- Pesquisar por uma banda ou artista;
+- Listar os álbuns disponíveis dessa banda ou artista;
+- Visualizar as músicas de um álbum selecionado;
+- Reproduzir uma prévia das músicas deste álbum;
+- Favoritar e desfavoritar músicas;
+- Ver a lista de músicas favoritas;
+- Ver o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
+- Editar o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
 
 
 ### Ajustes e melhorias
