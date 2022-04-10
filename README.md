@@ -17,8 +17,8 @@ Tudo isso usando uma API do ITunes
 - Reproduzir uma prévia das músicas deste álbum;
 - Favoritar e desfavoritar músicas;
 - Ver a lista de músicas favoritas;
-- Ver o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
-- Editar o perfil da pessoa logada; ######<i>-- em desenvolvimento </i>
+- Ver o perfil da pessoa logada; `<i>-- em desenvolvimento </i>`
+- Editar o perfil da pessoa logada; `<i>-- em desenvolvimento </i>`
 
 
 ### Ajustes e melhorias
